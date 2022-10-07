@@ -1,8 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-
-    background-image: url(/images/bunny-bow.png);
-    background-size: 600px 190px;
-    background-repeat:initial;
+    width:100%;
     
     
 }
+
+header{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    height:7vh;
+    margin:0;
+    background-image: linear-gradient(to bottom left, gray, rgb(255,255,255,0.5));
+}
+.navbar{
+    background-color: rgb(66, 162, 130);
+    height: 2.5em;
+    margin:0;
+    width:100%;
+    border: 1px solid darkmagenta;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+.navbar nav a{
+display: block;
+box-sizing: border-box;
+height: auto;
+width: min(100px,20vw);
+background-color: rgb(175, 175, 175);
+padding: 3px;
+margin: 7px 10px;
+float:left;
+text-align: center;
+color:white;
+text-decoration: none;
+
+}
+.navbar nav a:hover{
+
+    font-weight: bold;
+    background-color: firebrick;
+}
+
+
+
+
+.leftsection,.rightsection{
+    box-sizing: border-box;
+    width: 20%;
+    background-color: aqua;
+    height: 80vh;
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom left, green, white,red);
+}
+.section ul li{
+    list-style-type: none;
+    display: flex;
+    width:100%;
+    height:auto;
+    flex-direction: column;
+    background-color: yellowgreen;
+    border: 2px solid rebeccapurple;
+    margin: 10px 0px;
+}
+.section ul li:hover{
+    background-color: firebrick;
+    font-size: 20px;
+}
+.section ul li a:hover{
+    color: white;
+    font-size: 20px;
+}
+.section div ul li a {
+    padding: 4px;
+text-decoration: none;
+display: block;
+} 
+.midsection{
+    width:60%;
+    background-color: white;
+    height: 80vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom left, white, black);
+}
+.midsection div h2{
+    text-align: left;
+    margin:5px;
+    color:black
+}
+.midsection div p{
+    text-align: center;
+    margin:5px;
+    color: black
+}
+.section{
+
+    float:left;
+
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.articlesection{
+    background-image: linear-gradient(to bottom left, black , white);
+    width: 100%;
+    height: 200px;
+}
+.articlesection article{
+    padding: 30px;
+}
+footer {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    background-image: linear-gradient(to bottom left, green, white,red);
+    
+  }
+
+ @media screen and (max-width:800px){
+
+    .section{
+        clear: left;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .articlesection{
+        height: auto;
+    }
+    
+ }
+ @media screen and (max-width:600px){
+
+    .navbar nav a{
+        width: 100%;
+    }
+    .navbar{
+        height: 150px;
+    }
+    
+ }
+
+
